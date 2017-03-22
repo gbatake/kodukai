@@ -1,0 +1,28 @@
+<html>
+<head>
+<meta http-equiv="Context-Type" cntent="text/html"; charset="UTF-8"/>
+<title>小遣い帳</title>
+<style type="text/css">
+#editTbl th{
+   background: #d7ffd7;
+     }
+#editTbl th,td{
+    padding: 5px 15px;
+     }
+</style>
+<body>
+<form name="fm">	
+ <script type = "text/javascript" src="sample.js"></script>
+ <table id="editTbl" border="1" rules="all">
+  <tr>
+   <th>No</th><th>年</th><th>月</th><th>日</th><th>内容</th><th>収入</th><th>支出</th><th>残高</th><th>削除</th>
+  </tr>
+ </table>
+ <br>
+ <input type="button" value="追加" onclick="OnAddButtonClick('editTbl');" style="WIDTH: 40px; HEIGHT: 35px; position: relative; left: 37%;"/>
+ <input type="button" value="計算" onclick="OnCalcButtonClick('editTbl');" style="WIDTH: 40px; HEIGHT: 35px; position: relative; left: 37%;"/>
+ <br>
+ <label id="msgArea" style="position: relative; left: 1%;"></label>
+</form>
+ </body>
+</html>
